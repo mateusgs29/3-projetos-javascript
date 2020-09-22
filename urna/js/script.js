@@ -1,10 +1,10 @@
 // separando as classes nas variaveis para controle
-let seuVotoPara = document.querySelector('.div1_1 span');
-let cargo = document.querySelector('.div1_2 span');
-let descricao = document.querySelector('.div1_4');
-let aviso = document.querySelector('.div2');
-let lateral = document.querySelector('.div1_right');
-let numeros = document.querySelector('.div1_3');
+let seuVotoPara = document.querySelector('.seuVoto span');
+let cargo = document.querySelector('.cargo span');
+let descricao = document.querySelector('.descricao');
+let aviso = document.querySelector('.rodape_tela');
+let lateral = document.querySelector('.div_right');
+let numeros = document.querySelector('.div_numeros');
 
 let etapaAtual = 0;
 let numero = ''; // numero que será digitado
@@ -56,11 +56,11 @@ function atualizaInterface(){
         let fotosHtml = '';
         for (const i in candidato.fotos) {
             if(candidato.fotos[i].small){ // caso tenha vice (ele deve ficar com a foto menor)
-                fotosHtml += `<div class="div1_image small">
+                fotosHtml += `<div class="div_image small">
                          <img src="img/${candidato.fotos[i].url}" alt="">
                          ${candidato.fotos[i].legenda}</div>`;    
             } else{
-                fotosHtml += `<div class="div1_image">
+                fotosHtml += `<div class="div_image">
                              <img src="img/${candidato.fotos[i].url}" alt="">
                              ${candidato.fotos[i].legenda}</div>`;    
             }
