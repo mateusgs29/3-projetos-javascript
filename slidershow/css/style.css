@@ -1,0 +1,52 @@
+body{
+    margin: 0px;
+}
+
+header{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: grey;
+}
+
+.nav{
+    height: 60px;
+    background-color: red;
+}
+
+.slider{
+    flex: 1;
+    overflow: hidden;
+}
+
+.slider_width{
+    height: 100%;
+    display: flex;
+    transition: all ease 0.3s;
+}
+
+.slider_item{
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider_controls{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
