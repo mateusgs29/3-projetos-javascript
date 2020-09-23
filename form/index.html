@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validador de formulário</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="script.js"></script>
+    <div class="screen">
+        <div class="leftside">
+            <img src="img/social_media.png" alt="">
+        </div>
+        <div class="rightside">
+            <h1>Crie uma conta</h1>
+
+            <form action="../index.html" method="POST" class="validator">
+                <label>
+                    Seu nome: <br>
+                    <input type="text" name="name">
+                </label>
+                <label>
+                    Seu email: <br>
+                    <input type="email" name="email">
+                </label>
+                <label>
+                    Sua senha: <br>
+                    <input type="password" name="password">
+                </label>
+                <label>
+                    <input type="submit" value="Cadastrar">
+                </label>
+            </form>
+            
+            <div>
+                Já tem uma conta? <a href="">Faça Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
