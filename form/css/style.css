@@ -43,9 +43,15 @@ body{
 
 .rightside input{
     width: 100%;
-    border: 1px solid #999;
+    border: 1.7px solid #999;
     border-radius: 5px;
     padding: 8px;
     font-size: 15px;
     outline: 0;
+}
+
+.error{
+    font-size: 12px;
+    color: #E1474D;
+    padding: 4px;
 }
