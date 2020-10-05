@@ -48,7 +48,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    right: 100px;
+    right: 10%;
 }
 
 .control{
@@ -67,18 +67,17 @@ header{
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     bottom: 0;
     height: 25%;
 }
 
 .info{
-    flex: 1;
-    width: 40%;
-    margin-left: 20%;
-    border: 2px solid red;
     color: #fff;
-    text-align: center;
-    
+    position: relative;
+    top: 80%;
+    left: 20%;
+    font-size: large;
+    line-height: 100%;
 }
