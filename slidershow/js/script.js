@@ -1,6 +1,7 @@
 let slideAtual = 0; // slide que está sendo mostrado atualmente
 let sliderWidth = document.querySelector('.slider_width');
 let totalSlides = 0;
+let pausado = false;
 
 // Definir altura dos controles
 document.querySelector('.slider_controls').style.height =
@@ -24,6 +25,10 @@ function colocarFotos() {
     let slides = document.querySelectorAll('.slider_item');
     for (let i = 0; i < imgSlide.length; i++) {
         slides[i].style.backgroundImage = `url(img/${imgSlide[i].url})`;
+        slides[i].innerHTML = `<div class="info">
+                                    <h1>${imgSlide[i].titulo}</h1>
+                                    <h2>${imgSlide[i].local}</h2>
+                                </div>`;
     }
 }
 
@@ -37,6 +42,19 @@ function goNext() {
     updateMargin();
 }
 
+function pause(){
+    trocarIcone = document.querySelector('.iconeMeio');
+    if(!pausado){
+        clearInterval(intervalo);
+        pausado = true;
+        trocarIcone.innerHTML = 'play_arrow'; 
+    } else{
+        intervalo = setInterval(goNext, 4000);
+        pausado = false;
+        trocarIcone.innerHTML = 'pause';
+    }
+}
+
 function updateMargin() {
     let sliderItem = document.querySelector('.slider_item').clientWidth;
     let newMargin = (slideAtual * sliderItem);
@@ -45,4 +63,4 @@ function updateMargin() {
 }
 
 inicio();
-setInterval(goNext, 4500); // passa de slide automáticamente
+intervalo = setInterval(goNext, 4000); // passa de slide automáticamente
