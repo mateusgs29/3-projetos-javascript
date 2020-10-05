@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slideshow</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <header>
-        <nav class="nav"></nav>
+        <nav class="nav">Slider Show</nav>
         <div class="slider">
-            <div class="slider_controls">
-                <div class="control" onclick="goPrev()">volt</div>
-                <div class="control" onclick="goNext()">prox</div>
+            <div class="box">
+                <div class="info"><span>Titulo</span></div>
+                <div class="slider_controls">
+                    <div class="control" onclick="goPrev()"><i class="material-icons">skip_previous</i></div>
+                    <div class="control"><i class="material-icons">pause</i></div>
+                    <div class="control" onclick="goNext()"><i class="material-icons">skip_next</i></div>
+                </div>
             </div>
-            <div class="slider_width">
-                <div class="slider_item" style="background-color: blue;"></div>
-                <div class="slider_item" style="background-color: orange;"></div>
-                <div class="slider_item" style="background-color: green;"></div>
-            </div>
+            <div class="slider_width">itens</div>
         </div>
     </header>
     <section>
-        <h1>SIte</h1>
+        <h1>Resto do Site</h1>
     </section>
+    <script src="imagens.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
