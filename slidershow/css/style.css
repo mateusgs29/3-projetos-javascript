@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
     margin: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -12,7 +15,12 @@ header{
 
 .nav{
     height: 60px;
-    background-color: red;
+    background-color: #282828;
+    color: rgb(218, 218, 50);
+    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .slider{
@@ -36,10 +44,11 @@ header{
 .slider_controls{
     position: absolute;
     z-index: 99;
-    width: 100%;
+    width: 12%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    right: 100px;
 }
 
 .control{
@@ -49,4 +58,27 @@ header{
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    bottom: 0;
+    height: 25%;
+}
+
+.info{
+    flex: 1;
+    width: 40%;
+    margin-left: 20%;
+    border: 2px solid red;
+    color: #fff;
+    text-align: center;
+    
 }
