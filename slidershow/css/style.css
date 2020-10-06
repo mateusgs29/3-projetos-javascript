@@ -13,10 +13,10 @@ header{
     background-color: grey;
 }
 
-.nav{
+nav{
     height: 60px;
     background-color: #282828;
-    color: rgb(218, 218, 50);
+    color: #fff;
     font-size: 45px;
     justify-content: center;
     align-items: center;
