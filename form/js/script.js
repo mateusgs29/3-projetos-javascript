@@ -45,6 +45,13 @@ let Validator = {
                             return 'E-mail digitado não é válido.';
                         }
                         break;
+                    case 'confirmPass':
+                        let pass = form.querySelector('input[name = "password"]');
+                        console.log("P: " + pass.value + " I: " + input.value);
+                        if(input.value !== pass.value){
+                            return 'As senhas não estão iguais.';
+                        }
+                        break;
                 }
             }
         }
