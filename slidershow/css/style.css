@@ -17,7 +17,8 @@ nav{
     height: 60px;
     background-color: #282828;
     color: #fff;
-    font-size: 45px;
+    font-size: 30px;
+    line-height: 60px;
     justify-content: center;
     align-items: center;
     display: flex;
